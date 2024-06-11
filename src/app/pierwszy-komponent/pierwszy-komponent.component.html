@@ -1,0 +1,12 @@
+<p>pierwszy-komponent works!</p>
+
+<div>
+    <input #inputValue placeholder="String do tablicy" />
+    <button (click)="dodajDoTablicy(inputValue.value)">Dodaj!</button>
+    <ul>
+      <li *ngFor="let element of tablica">{{ element}}</li>
+    </ul>
+</div> 
+<div>
+    <app-drugi-komponent></app-drugi-komponent>
+</div> 
